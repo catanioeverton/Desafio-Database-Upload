@@ -8,9 +8,9 @@ import Trasactionsrepository from '../repositories/TransactionsRepository';
 
 class DeleteTransactionService {
   public async execute(id: string): Promise<void> {
-    const trasactionsRepository = getCustomRepository(Trasactionsrepository);
+    const transactionsRepository = getCustomRepository(Trasactionsrepository);
 
-    const transaction = await trasactionsRepository.findOne(id);
+    const transaction = await transactionsRepository.findOne(id);
 
     if (!transaction){
       throw new AppError('Transaction does not exist');
