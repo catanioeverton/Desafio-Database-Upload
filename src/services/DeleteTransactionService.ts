@@ -4,7 +4,7 @@ import AppError from '../errors/AppError';
 
 import Trasaction from '../models/Transaction';
 
-import Trasactionsrepository from '..//repositories/TransactionsRepository';
+import Trasactionsrepository from '../repositories/TransactionsRepository';
 
 class DeleteTransactionService {
   public async execute(id: string): Promise<void> {
